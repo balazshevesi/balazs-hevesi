@@ -1,2 +1,1 @@
-# balazs-hevesi
-portfolio
+personal portfolio website
