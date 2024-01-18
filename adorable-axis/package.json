@@ -9,19 +9,30 @@
     "preview": "astro preview",
     "astro": "astro"
   },
+  "overrides": {
+    "react": "npm:@preact/compat@latest",
+    "react-dom": "npm:@preact/compat@latest"
+  },
   "dependencies": {
     "@astrojs/check": "^0.4.1",
     "@astrojs/mdx": "^2.0.4",
+    "@astrojs/react": "^3.0.9",
     "@astrojs/rss": "^4.0.2",
     "@astrojs/sitemap": "^3.0.4",
     "@astrojs/tailwind": "^5.1.0",
+    "@heroicons/react": "^2.1.1",
+    "@preact/compat": "^17.1.2",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
     "astro": "^4.1.2",
     "astro-emoji": "^1.2.0",
+    "marked": "^11.1.1",
     "tailwindcss": "^3.4.1",
     "tailwindcss-animate": "^1.0.7",
     "typescript": "^5.3.3"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10",
     "prettier": "^3.1.1",
     "prettier-plugin-astro": "^0.12.3"
   }

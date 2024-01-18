@@ -1,0 +1,74 @@
+---
+import Wrapper from "../../layouts/Wrapper.astro";
+import reactRipplesContinuedImg from "../../content/imgs/react-ripples-continued.png";
+
+import { Image } from "astro:assets";
+import { marked } from "marked";
+import { getEntry } from "astro:content";
+
+import { ArrowLeftIcon } from "@heroicons/react/24/outline";
+
+const { projektNamn } = Astro.params;
+
+export function getStaticPaths() {
+  return [
+    { params: { projektNamn: "react-ripples-continued" } },
+    { params: { projektNamn: "när-slutar-lektionen" } },
+    { params: { projektNamn: "clothing-webshop" } },
+  ];
+}
+const project = await getEntry("projects", projektNamn);
+const content = marked.parse(project!.body);
+
+// const response = await fetch(projectMarkdown?.data.githubReadMe);
+// const markdown = await response.text();
+---
+
+<Wrapper>
+  <div class="bg-slate-100 min-h-screen">
+    <div class="mx-auto max-w-7xl p-12">
+      <div
+        class="mx-auto max-w-7xl px-12 flex items-center text-xl text-zinc-600 font-semibold mb-2 hover:text-black animate-in fade-in-0 slide-in-from-bottom-5"
+      >
+        <button onclick=`history.back()` class="flex">
+          <ArrowLeftIcon className="size-6 stroke-[2.2]" />
+          Tillbaka
+        </button>
+      </div>
+      <div
+        class="rounded-xl relative shadow-2xl w-full flex bg-blue"
+        transition:name={`${projektNamn}-header-img`}
+      >
+        <Image class="rounded-2xl" alt="" src={reactRipplesContinuedImg} />
+      </div>
+      <div class="mx-auto max-w-7xl px-8 relative">
+        <div class="bg-zinc-50 rounded-b-2xl shadow-xl px-12 py-12 pb-20 w-fit">
+          <div
+            class="prose prose-zinc relative z-10 animate-in fade-in-0 slide-in-from-top-10 duration-500"
+            set:html={content}
+          />
+        </div>
+        <div
+          class="absolute z-30 right-0 top-0 pt-3 flex justify-end w-full gap-4 px-8 text-zinc-600 font-semibold text-lg animate-in fade-in-0 slide-in-from-left-10 duration-500"
+        >
+          <a
+            class="bg-white px-5 py-2 rounded-lg flex shadow-md transition-all hover:-translate-y-1 active:scale-95 hover:text-black"
+            href={project?.data.readme}
+            target="_blank">📖 Readme</a
+          >
+
+          <a
+            class="bg-white px-5 py-2 rounded-lg flex shadow-md transition-all hover:-translate-y-1 active:scale-95 hover:text-black"
+            href={project?.data.källkod}
+            target="_blank">👨‍💻 Källkod</a
+          >
+          <a
+            class="bg-white px-5 py-2 rounded-lg flex shadow-md transition-all hover:-translate-y-1 active:scale-95 hover:text-black"
+            href={project?.data.live}
+            target="_blank">🖥️ Live</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</Wrapper>
