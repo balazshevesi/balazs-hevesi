@@ -7,7 +7,7 @@ import relativeLinks from "astro-relative-links";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://example.com",
-  integrations: [mdx(), sitemap(), tailwind(), react()],
-  base: "balazs-hevesi/",
+  // site: "https://example.com",
+  integrations: [mdx(), sitemap(), tailwind(), react(), relativeLinks()],
+  // base: "balazs-hevesi/",
 });
