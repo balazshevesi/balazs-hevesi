@@ -7,8 +7,5 @@ import relativeLinks from "astro-relative-links";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://balazs-topg.github.io/",
-  base: "/balazs-hevesi/",
-
   integrations: [mdx(), sitemap(), tailwind(), react(), relativeLinks()],
 });
