@@ -1,6 +1,5 @@
 ---
 import Wrapper from "../../layouts/PageWrapper.astro";
-import reactRipplesContinuedImg from "../../content/imgs/react-ripples-continued.png";
 
 import { Image } from "astro:assets";
 import { marked } from "marked";
@@ -14,7 +13,7 @@ export function getStaticPaths() {
   return [
     { params: { projektNamn: "när-slutar-lektionen" } },
     { params: { projektNamn: "react-ripples-continued" } },
-    { params: { projektNamn: "clothing-webshop" } },
+    // { params: { projektNamn: "clothing-webshop" } },
   ];
 }
 const project = await getEntry("projects", projektNamn);
