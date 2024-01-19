@@ -13,10 +13,8 @@ img: "/react-ripples-continued-cover.png"
 
 Jag byggde detta NPM packetet för att jag inte kunda hitta ett enkelt bibliotek för att att göra ripple effects med.
 
+[Den som fanns](https://rwu823.github.io/react-ripples/) tyckte jag såg ut som skit, och alla de andra verkade inkludera väldigt mycket mer än en enkel ripple effect.
+
 ## Tech stack
 
 [React.js](https://react.dev/), [Typescript](https://www.typescriptlang.org/), [NPM](https://www.npmjs.com/)
-
-## Server komponenter
-
-Appen utnyttjar server komponenterna i next.js 14s app router. All data fetching sker med hjälp av de.

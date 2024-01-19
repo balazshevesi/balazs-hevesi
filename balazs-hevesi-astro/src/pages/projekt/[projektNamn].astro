@@ -13,6 +13,7 @@ export function getStaticPaths() {
   return [
     { params: { projektNamn: "när-slutar-lektionen" } },
     { params: { projektNamn: "react-ripples-continued" } },
+    { params: { projektNamn: "clothing-webshop" } },
     // { params: { projektNamn: "clothing-webshop" } },
   ];
 }
@@ -23,29 +24,23 @@ const content = marked.parse(project!.body);
 <Wrapper>
   <div class="bg-zinc-100 min-h-screen">
     <div
-      class="absolute z-0 top-0 w-full animate-in fade-in-0 slide-in-from-bottom-10 duration-500"
+      class="absolute top-0 left-0 w-full animate-in slide-in-from-top-5 duration-500"
     >
-      <div class="absolute top-0 h-[30rem] w-full bg-white"></div>
-      <svg
-        class="top-0 scale-y-[0.3] origin-bottom"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 320"
-      >
-        <path
-          class="fill-zinc-100"
+      <div class="w-full h-44 bg-white"></div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
+        ><path
+          class="fill-white"
           fill-opacity="1"
-          d="M0,192L60,160C120,128,240,64,360,32C480,0,600,0,720,53.3C840,107,960,213,1080,224C1200,235,1320,149,1380,106.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
-        ></path>
-      </svg>
-      <div class="relative z-20 bg-zinc-100 w-full h-40"></div>
+          d="M0,96L60,122.7C120,149,240,203,360,218.7C480,235,600,213,720,186.7C840,160,960,128,1080,112C1200,96,1320,96,1380,96L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+        ></path></svg
+      >
     </div>
-
     <div class="relative z-20 mx-auto max-w-7xl p-12">
       <div
         class="mx-auto max-w-7xl px-12 flex items-center text-xl text-zinc-600 font-semibold mb-2 hover:text-black animate-in fade-in-0 slide-in-from-bottom-5 duration-500"
       >
         <button
-          onclick=`history.back()`
+          onclick=`sessionStorage.getItem("homeIsLoaded") ? history.back() : window.location.href = "/"`
           class="flex transition-all active:scale-95"
         >
           <ArrowLeftIcon className="size-6 stroke-[2.2]" />
@@ -58,7 +53,7 @@ const content = marked.parse(project!.body);
       >
         <!-- <Image class="rounded-2xl" alt="" src={reactRipplesContinuedImg} /> -->
         <Image
-          class="rounded-2xl object-cover bg-zinc-800 w-full relative shadow-2xl animate-in zoom-in-105 duration-500 aspect-video"
+          class="rounded-2xl object-cover bg-zinc-800 w-full relative shadow-2xl aspect-video"
           src={project?.data.img}
           alt=""
           width={400}
@@ -66,9 +61,11 @@ const content = marked.parse(project!.body);
         />
       </div>
       <div class="mx-auto max-w-7xl px-8 relative">
-        <div class="bg-zinc-50 rounded-b-2xl shadow-xl px-12 py-12 pb-20 w-fit">
+        <div
+          class="bg-zinc-50 rounded-b-2xl shadow-xl px-12 py-12 pb-20 w-full max-w-2xl"
+        >
           <div
-            class="prose prose-zinc relative animate-in fade-in-0 slide-in-from-top-10 duration-500"
+            class="prose prose-zinc relative animate-in fade-in-0 slide-in-from-top-10 duration-500 w-full"
             set:html={content}
           />
         </div>

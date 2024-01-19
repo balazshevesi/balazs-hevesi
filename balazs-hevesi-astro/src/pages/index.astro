@@ -6,9 +6,24 @@ import ProjectCard from "../components/ProjectCard.astro";
 const projects = await Astro.glob("../content/projects/*.md");
 ---
 
+<script>
+  sessionStorage.setItem("homeIsLoaded", "" + true);
+
+  // let top = sessionStorage.getItem("home-scroll");
+  // window.scrollTo(0, +top!);
+
+  // document.addEventListener("scroll", (e) => {
+  //   if (window.location.pathname === "/")
+  //     sessionStorage.setItem("home-scroll", "" + window.scrollY);
+  // });
+  // window.addEventListener("popstate", () => {
+  //   console.log("location changed!");
+  // });
+</script>
+
 <Wrapper>
   <div
-    class="flex items-center flex-col justify-center h-[calc(100dvh-4rem)] bg-white relative animate-in fade-in-50 slide-in-from-bottom-8 duration-1000"
+    class="flex items-center flex-col justify-center h-[calc(100dvh-4rem)] bg-white relative"
   >
     <div class="flex flex-col justify-center font-extrabold">
       <div class="text-2xl flex items-end tracking-wide text-zinc-800">
@@ -40,9 +55,7 @@ const projects = await Astro.glob("../content/projects/*.md");
       </div>
     </div>
   </div>
-  <div
-    class="relative z-10 animate-in fade-in-0 slide-in-from-bottom-10 duration-500"
-  >
+  <div class="relative z-10">
     <svg
       class="absolute top-0 -translate-y-full scale-y-[0.3] origin-bottom"
       xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +73,7 @@ const projects = await Astro.glob("../content/projects/*.md");
           projects.map((project) => (
             <div>
               <ProjectCard
-                href={`projekt/${project.frontmatter.pathName}`}
+                href={`/projekt/${project.frontmatter.pathName}`}
                 imageSrc={project.frontmatter.img}
                 title={project.frontmatter.title}
                 transitionName={project.frontmatter.pathName}

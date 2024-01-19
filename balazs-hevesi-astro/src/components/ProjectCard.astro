@@ -14,10 +14,10 @@ const { transitionName } = Astro.props;
   class="transition-all [&>.image]:hover:-translate-y-2 [&>.image]:hover:shadow-2xl [&>.image]:active:scale-95"
 >
   <div
+    transition:name={`${transitionName}-header-img`}
     class="image bg-white rounded-xl duration-500 flex items-center justify-center overflow-hidden w-full aspect-video shadow-lg mb-3"
   >
     <Image
-      transition:name={`${transitionName}-header-img`}
       class="bg-zinc-800 transition-all rounded-xl duration-500 object-cover w-full"
       src={imageSrc}
       alt=""
