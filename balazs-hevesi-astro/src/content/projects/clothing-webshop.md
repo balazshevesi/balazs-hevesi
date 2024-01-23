@@ -2,8 +2,8 @@
 title: E-handel 🛍️
 pathName: "clothing-webshop"
 readme: "https://github.com/Balazs-topg/clothing-webshop?tab=readme-ov-file#--clothing-webshop-%EF%B8%8F"
-källkod: "https://github.com/Balazs-topg/clothing-webshop"
-live: "https://www.xn--nr-slutar-lektionen-gwb.net/"
+källkod: "https://clothing-webshop-one.vercel.app/"
+live: "clothing-webshop-one.vercel.app"
 img: "/clothing-webshop.png"
 ---
 

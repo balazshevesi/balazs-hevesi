@@ -15,3 +15,11 @@
   <img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=for-the-badge"/>
   <img src="https://img.shields.io/badge/Vercel-000?logo=vercel&logoColor=fff&style=for-the-badge"/>
 </div>
+
+## TODO
+
+- [ ] Bygg ut "om mig"
+- [ ] Fixa och lägg till CV
+- [ ] Lägg till email också
+- [ ] Spela in loom videor för varje projekt
+- [ ] Lägg till footer
