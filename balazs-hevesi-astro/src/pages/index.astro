@@ -3,7 +3,7 @@ import Wrapper from "../layouts/PageWrapper.astro";
 
 import ProjectCard from "../components/ProjectCard.astro";
 import Footer from "../components/Footer.astro";
-import VemArJag from "../components/VemArJag.astro";
+import VemArJag from "../components/VemArJag.tsx";
 
 const projects = await Astro.glob("../content/projects/*.md");
 ---
@@ -75,6 +75,6 @@ const projects = await Astro.glob("../content/projects/*.md");
       </div>
     </div>
   </div>
-  <VemArJag />
+  <VemArJag client:load />
   <Footer />
 </Wrapper>
