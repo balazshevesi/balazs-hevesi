@@ -15,10 +15,10 @@ const { transitionName } = Astro.props;
 >
   <div
     transition:name={`${transitionName}-header-img`}
-    class="image bg-white rounded-xl duration-500 flex items-center justify-center overflow-hidden w-full aspect-video shadow-lg mb-3"
+    class="image mb-3 flex aspect-video w-full items-center justify-center overflow-hidden rounded-xl bg-white shadow-lg duration-500"
   >
     <Image
-      class="bg-zinc-800 transition-all rounded-xl duration-500 object-cover w-full"
+      class="w-full rounded-xl bg-zinc-800 object-cover transition-all duration-500"
       src={imageSrc}
       alt=""
       width={200}
@@ -26,7 +26,7 @@ const { transitionName } = Astro.props;
     />
   </div>
   <div
-    class="text-lg font-bold ml-2 text-zinc-800"
+    class="ml-2 text-lg font-bold text-zinc-800"
     transition:name={`${transitionName}-title`}
   >
     {title}
