@@ -1,20 +1,71 @@
 import { useState } from "react";
 
+// import stars from "../assets/stars.png"
+import programmeringImg from "../../public/vemarjag/programmering.jpeg";
+import gymImg from "../../public/vemarjag/gym.jpeg";
+
 const content = {
   Programmering: (
-    <div>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui veniam
-      aliquam tempore. Voluptas, odit fugit. Id, quaerat quidem assumenda nam
-      labore iste aspernatur in aut doloremque, illo fuga deleniti perspiciatis.
+    <div className=" flex flex-col sm:flex-row">
+      <div>
+        Jag började programmera i början av tvåan på gymnasiet när vi hade
+        Webbutveckling 1 och Programmering 1. Kurserna var inte särskilt
+        djupgående, men de fick mig att hitta min passion för programmering.
+        <br />
+        <br />
+        Jag har aldrig tyckt särskilt mycket om skolan, så därför valde jag att
+        gå den själv-lärda vägen. Det senaste året (och lite till) har jag
+        försökt att bli en jävel på programmering.
+        <br />
+        <br />
+        Jag känner mig bekväm med: HTML, CSS, Javascript, Typescript, React,
+        Next, Tailwind, Express, RESTful-API:er, Drizzle-ORM
+        <br />
+        <br />
+        Jag har pillat lite med: Python, Vue, Nuxt, Astro (den här sidan är
+        byggd med Astro)
+        <br />
+        <br />
+      </div>
+      <div className="float-right shrink-0 p-2">
+        <img
+          height={200}
+          className="h-52 rounded-lg"
+          src={programmeringImg.src}
+        ></img>
+      </div>
     </div>
   ),
-  Musik: <div>btuhh </div>,
-  Gym: (
+  Musik: (
     <div>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui veniam
-      aliquam tempore. Voluptas, odiwerwerwest fugit. Id, quaerat quidem
-      assumenda nam labore iste aspernatur in aut doloremque, illo fuga deleniti
-      perspiciatis.
+      Jag har alltid tyckt om att skapa. När jag var barn var mitt valda medium
+      Lego, sedan Minecraft, sedan lite photoshop, sedan musik produktion,
+      numera har jag landat på programmering.
+      <br />
+      <br />
+      När jag producerade musik så kom inspirationen ifrån Avicii. Så det var
+      mycket EDM, sedan bytte jag till göra HipHop beats.
+      <br />
+      <br />
+      Min musiksmak är kaos. Det sträcker sig ifrån 2010-talets House, till
+      zyzz-core, till typ Gangsterrap.
+    </div>
+  ),
+  Gym: (
+    <div className=" flex flex-col sm:flex-row">
+      <div>
+        Jag försöker alltid att vara den bästa versionen av mig själv, och jag
+        vet att den bästa versionen av mig själv gymmar, så jag gör med det.
+        <br />
+        <br />
+        Nu har jag tagit gymmet *relativt* seriöst i ca ett och ett halvt år och
+        jag tycker att det är skit roligt, jag kommer definitivt fortsätta.
+        <br />
+        <br />
+      </div>
+      <div className="float-right shrink-0 p-2">
+        <img height={300} className="h-72 rounded-lg" src={gymImg.src}></img>
+      </div>
     </div>
   ),
 };
