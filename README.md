@@ -22,4 +22,5 @@
 - [ ] Fixa och lägg till CV
 - [ ] Lägg till email också
 - [ ] Spela in loom videor för varje projekt
+- [ ] Embedda loom videorna
 - [ ] Lägg till footer
