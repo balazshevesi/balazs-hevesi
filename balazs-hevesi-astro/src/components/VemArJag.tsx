@@ -1,9 +1,5 @@
 import { useState } from "react";
 
-// import stars from "../assets/stars.png"
-import programmeringImg from "../../public/vemarjag/programmering.jpeg";
-import gymImg from "../../public/vemarjag/gym.jpeg";
-
 const content = {
   Programmering: (
     <div className=" flex flex-col sm:flex-row">
@@ -18,21 +14,14 @@ const content = {
         försökt att bli en jävel på programmering.
         <br />
         <br />
-        Jag känner mig bekväm med: HTML, CSS, Javascript, Typescript, React,
-        Next, Tailwind, Express, RESTful-API:er, Drizzle-ORM
+        I dags läget känner jag mig bekväm med: HTML, CSS, Javascript,
+        Typescript, React, Next, Tailwind, Express, RESTful-API:er, Drizzle-ORM
         <br />
         <br />
         Jag har pillat lite med: Python, Vue, Nuxt, Astro (den här sidan är
         byggd med Astro)
         <br />
         <br />
-      </div>
-      <div className="float-right shrink-0 p-2">
-        <img
-          height={200}
-          className="h-52 rounded-lg"
-          src={programmeringImg.src}
-        ></img>
       </div>
     </div>
   ),
@@ -49,23 +38,22 @@ const content = {
       <br />
       Min musiksmak är kaos. Det sträcker sig ifrån 2010-talets House, till
       zyzz-core, till typ Gangsterrap.
+      <br />
+      <br />
+      [här ska jag lägga till mina favorit låtar, och det som jag har proddat,
+      och kanske nån photoshop grej]
     </div>
   ),
   Gym: (
-    <div className=" flex flex-col sm:flex-row">
-      <div>
-        Jag försöker alltid att vara den bästa versionen av mig själv, och jag
-        vet att den bästa versionen av mig själv gymmar, så jag gör med det.
-        <br />
-        <br />
-        Nu har jag tagit gymmet *relativt* seriöst i ca ett och ett halvt år och
-        jag tycker att det är skit roligt, jag kommer definitivt fortsätta.
-        <br />
-        <br />
-      </div>
-      <div className="float-right shrink-0 p-2">
-        <img height={300} className="h-72 rounded-lg" src={gymImg.src}></img>
-      </div>
+    <div>
+      Jag försöker alltid att vara den bästa versionen av mig själv, och jag vet
+      att den bästa versionen av mig själv gymmar, så jag gör med det.
+      <br />
+      <br />
+      Nu har jag tagit gymmet *relativt* seriöst i ca ett och ett halvt år och
+      jag tycker att det är skit roligt, jag kommer definitivt fortsätta.
+      <br />
+      <br />
     </div>
   ),
 };

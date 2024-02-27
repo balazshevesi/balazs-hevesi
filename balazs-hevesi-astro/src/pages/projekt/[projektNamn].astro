@@ -43,7 +43,7 @@ const content = marked.parse(project!.body);
           onclick=`sessionStorage.getItem("homeIsLoaded") ? history.back() : window.location.href = "/"`
           class="flex transition-all active:scale-95"
         >
-          <ArrowLeftIcon className="size-6 stroke-[2.2]" />
+          <ArrowLeftIcon className="mr-1 size-6 stroke-[2.2]" />
           Tillbaka
         </button>
       </div>
@@ -51,14 +51,14 @@ const content = marked.parse(project!.body);
         class="relative z-20 flex"
         transition:name={`${projektNamn}-header-img`}
       >
-        <!-- <Image class="rounded-2xl" alt="" src={reactRipplesContinuedImg} /> -->
-        <Image
+        <div
           class="relative aspect-video w-full rounded-2xl bg-zinc-800 object-cover shadow-2xl"
-          src={project?.data.img}
-          alt=""
-          width={400}
-          height={400}
-        />
+        >
+          <div
+            class="overflow-hidden rounded-2xl"
+            set:html={project?.data.videoEmbed}
+          />
+        </div>
       </div>
       <div class="relative mx-auto max-w-7xl px-8">
         <div

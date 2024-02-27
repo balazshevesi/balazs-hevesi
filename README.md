@@ -18,7 +18,9 @@
 
 ## TODO
 
-- [ ] Bygg ut "om mig"
+- [x] Bygg ut "om mig"
+  - [ ] Optimera bilderna, och stylingen så att de syns typ
+  
 - [ ] Fixa och lägg till CV
 - [ ] Lägg till email också
 - [ ] Spela in loom videor för varje projekt
