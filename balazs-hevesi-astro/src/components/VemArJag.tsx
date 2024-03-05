@@ -6,7 +6,7 @@ const content = {
       <div>
         Jag började programmera i början av tvåan på gymnasiet när vi hade
         Webbutveckling 1 och Programmering 1. Kurserna var inte särskilt
-        djupgående, men de fick mig att hitta min passion för programmering.
+        djupgående, men de hjälpte mig att hitta min passion för programmering.
         <br />
         <br />
         Jag har aldrig tyckt särskilt mycket om skolan, så därför valde jag att
@@ -15,7 +15,8 @@ const content = {
         <br />
         <br />
         I dags läget känner jag mig bekväm med: HTML, CSS, Javascript,
-        Typescript, React, Next, Tailwind, Express, RESTful-API:er, Drizzle-ORM
+        Typescript, React, Next, Tailwind, Express, RESTful-API:er, Drizzle-ORM,
+        Relationsdatabaser
         <br />
         <br />
         Jag har pillat lite med: Python, Vue, Nuxt, Astro (den här sidan är
@@ -37,11 +38,11 @@ const content = {
       <br />
       <br />
       Min musiksmak är kaos. Det sträcker sig ifrån 2010-talets House, till
-      zyzz-core, till typ Gangsterrap.
+      zyzz-core och typ Gangsterrap.
       <br />
       <br />
-      [här ska jag lägga till mina favorit låtar, och det som jag har proddat,
-      och kanske nån photoshop grej]
+      Några av mina favoritlåtar inkluderar: Avicii - Broken Heart & Hennessy,
+      Avicii - Lord, Tyr - Graveyard Shifts, The Game - Hate It Or Love It
     </div>
   ),
   Gym: (
