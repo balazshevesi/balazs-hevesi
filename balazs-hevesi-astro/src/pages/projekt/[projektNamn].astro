@@ -35,7 +35,7 @@ const content = marked.parse(project!.body);
         ></path></svg
       >
     </div>
-    <div class="relative z-20 mx-auto max-w-7xl p-12">
+    <div class="relative z-20 mx-auto max-w-7xl px-4 py-12 md:px-12">
       <div
         class="mx-auto mb-2 flex max-w-7xl items-center px-12 text-xl font-semibold text-zinc-600 duration-500 animate-in fade-in-0 slide-in-from-bottom-5 hover:text-black"
       >
@@ -60,9 +60,9 @@ const content = marked.parse(project!.body);
           />
         </div>
       </div>
-      <div class="relative mx-auto max-w-7xl px-8">
+      <div class="relative mx-auto max-w-7xl px-4 md:px-8">
         <div
-          class="w-full max-w-2xl rounded-b-2xl bg-zinc-50 px-12 py-12 pb-20 shadow-xl"
+          class="w-full max-w-2xl rounded-b-2xl bg-zinc-50 p-4 py-12 pb-20 shadow-xl md:px-12"
         >
           <div
             class="prose prose-zinc relative w-full duration-500 animate-in fade-in-0 slide-in-from-top-10"
@@ -70,7 +70,7 @@ const content = marked.parse(project!.body);
           />
         </div>
         <div
-          class="absolute right-0 top-0 z-30 flex w-full justify-end gap-4 px-8 pt-3 text-lg font-semibold text-zinc-600 duration-500 animate-in fade-in-0 slide-in-from-left-10 slide-in-from-top-5"
+          class="relative right-0 top-0 z-30 flex w-full justify-end gap-4 px-8 pt-3 text-lg font-semibold text-zinc-600 duration-500 animate-in fade-in-0 slide-in-from-left-10 slide-in-from-top-5 lg:absolute"
         >
           <a
             class="flex rounded-2xl bg-white px-5 py-2 shadow-md transition-all hover:-translate-y-1 hover:text-black hover:shadow-lg active:scale-95"

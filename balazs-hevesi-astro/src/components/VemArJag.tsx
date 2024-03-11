@@ -96,9 +96,9 @@ export default function VemArJag() {
           d="M0,320L60,277.3C120,235,240,149,360,149.3C480,149,600,235,720,272C840,309,960,299,1080,250.7C1200,203,1320,117,1380,74.7L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
         ></path>
       </svg>
-      <div className="bg-zinc-200 px-12 pb-36 pt-28">
+      <div className="bg-zinc-200 px-4 pb-36 pt-28 sm:px-12">
         <h2 className="mb-16 text-center text-4xl font-black">Vem är jag?</h2>
-        <div className="mx-auto mb-6 flex w-fit gap-4 p-4 text-lg font-semibold text-zinc-600">
+        <div className="mx-auto mb-6 flex w-fit flex-wrap gap-4 py-4 text-lg font-semibold text-zinc-600">
           {tabs.map((tab) => (
             <button onClick={() => setSelectedTab(tab.id)}>
               <Tab

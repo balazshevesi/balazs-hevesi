@@ -4,6 +4,8 @@ pathName: "clothing-webshop"
 readme: "https://github.com/Balazs-topg/clothing-webshop?tab=readme-ov-file#--clothing-webshop-%EF%B8%8F"
 källkod: "https://clothing-webshop-one.vercel.app/"
 live: "https://clothing-webshop-one.vercel.app/"
+videoEmbed: '<div style="position: relative; padding-bottom: 64.98194945848375%; height: 0;"><iframe src="https://www.loom.com/embed/1732ebd9747940a68bd79ff6c3301aa9?sid=595f1ee1-f7fd-454f-982c-7ab086987456" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>'
+
 img: "/clothing-webshop.png"
 ---
 
