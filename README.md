@@ -21,8 +21,8 @@
 - [x] Bygg ut "om mig"
   - [ ] Optimera bilderna, och stylingen så att de syns typ
   
-- [ ] Fixa och lägg till CV
+- [x] Fixa och lägg till CV
 - [ ] Lägg till email också
-- [ ] Spela in loom videor för varje projekt
-- [ ] Embedda loom videorna
+- [x] Spela in loom videor för varje projekt
+- [x] Embedda loom videorna
 - [ ] Lägg till footer
